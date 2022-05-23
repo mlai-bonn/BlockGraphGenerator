@@ -42,8 +42,8 @@ The file in this repository requires the `networkx` library and can then be used
 
 The script produces output in the file format that is used by the [TUDataset](https://chrsmrrs.github.io/datasets/).
 
+Use it on the command line with the following arguments
 
-'''
 	Blockgraph Dataset Generator
 
 	optional arguments:
@@ -55,7 +55,7 @@ The script produces output in the file format that is used by the [TUDataset](ht
 	  --p P        Edge probability
 	  --m M        Number of noise edges
 	  --seed SEED  Random seed
-'''
+
 
 
 # Reference
