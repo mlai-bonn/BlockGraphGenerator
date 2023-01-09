@@ -6,8 +6,8 @@ Let $T$ be some random tree of a predefined size.
 Create two (non-isomorphic) graphs $G_1,G_2$ by adding a new edge to $T$.
 To ensure that the classification task is non-trivial, we require that $G_1$ and $G_2$ have the same multiset of vertex degrees.
 We then generate a set of graphs for each $G \in G_1,G_2$ by repeating the following process:
-Let $\widehat{G}$ be the empty graph.
 
+1. Let $\widehat{G}$ be the empty graph.
 1. For each $v \in G$, add a set of $c$ vertices $v_1,...,v_c$ to $\widehat{G}$.
 2. For each $v \in G$, connect pairs $\{v_i,v_j\} \in V(\widehat{G})$ by an edge with probability $p$.
 3. For all pairs $\{v_i,u_j\} \in V(\widehat{G})$ with $\{v,u\} \in E(G)$, connect them by an edge with probability $p$, as well.
@@ -42,8 +42,8 @@ The file in this repository requires the `networkx` library and can then be used
 
 The script produces output in the file format that is used by the [TUDataset](https://chrsmrrs.github.io/datasets/).
 
+Use it on the command line with the following arguments
 
-'''
 	Blockgraph Dataset Generator
 
 	optional arguments:
@@ -55,7 +55,7 @@ The script produces output in the file format that is used by the [TUDataset](ht
 	  --p P        Edge probability
 	  --m M        Number of noise edges
 	  --seed SEED  Random seed
-'''
+
 
 
 # Reference
